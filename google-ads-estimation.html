@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Coonduce · Google Ads · Estimación 2026 · Snow Tours</title>
+<meta name="description" content="Plan de inversión Google Ads para Coonduce — landing tours nieve Santiago. Keyword research ESP/ENG/POR, 3 escenarios de inversión, estructura campañas, KPIs."/>
+<meta name="theme-color" content="#009EE2"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+
+<style>
+:root{
+  --cyan:#009EE2;
+  --cyan-dark:#0077B6;
+  --cyan-soft:#E6F6FD;
+  --navy:#0C1424;
+  --navy-soft:#1A2438;
+  --ink:#0F1722;
+  --muted:#5A6577;
+  --line:#E4E8EE;
+  --bg:#FFFFFF;
+  --bg-alt:#F7F9FC;
+  --green:#22A06B;
+  --yellow:#E9B949;
+  --red:#E5484D;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --radius:14px;
+  --radius-lg:20px;
+  --maxw:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight:400;color:var(--ink);background:var(--bg);
+  line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.02em;color:var(--ink);line-height:1.2}
+h1{font-size:clamp(28px,3.4vw,42px);font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.025em}
+h3{font-size:18px;font-weight:700}
+h4{font-size:15px;font-weight:600}
+p{color:var(--muted);font-size:15px}
+.mono{font-family:var(--mono);font-feature-settings:"tnum","zero"}
+
+/* ============ HEADER ============ */
+.doc-head{
+  background:linear-gradient(135deg,#0C1424 0%,#142139 70%,#0C1424 100%);
+  color:#fff;padding:56px 0 48px;position:relative;overflow:hidden;
+}
+.doc-head::before{
+  content:"";position:absolute;top:-30%;right:-10%;width:60%;height:160%;
+  background:radial-gradient(circle, rgba(0,158,226,.18) 0%, transparent 60%);
+  pointer-events:none;
+}
+.doc-head .container{position:relative;z-index:2}
+.brand{
+  font-weight:800;font-size:24px;letter-spacing:-.03em;color:#fff;
+}
+.brand .dot{color:var(--cyan)}
+.doc-meta{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;
+  margin-bottom:28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+  color:rgba(255,255,255,.6);font-weight:600;
+}
+.doc-head h1{color:#fff;margin-bottom:12px;max-width:24ch}
+.doc-head h1 em{font-style:normal;color:var(--cyan)}
+.doc-head .lead{color:rgba(255,255,255,.78);font-size:17px;max-width:60ch;line-height:1.55}
+.doc-tag{
+  display:inline-block;background:rgba(0,158,226,.15);color:var(--cyan);
+  padding:6px 12px;border-radius:50px;font-size:11px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px;
+}
+
+/* ============ TOC ============ */
+.toc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 24px;margin:-32px auto 32px;position:relative;z-index:3;
+  max-width:var(--maxw);
+  display:flex;gap:6px;flex-wrap:wrap;
+  box-shadow:0 16px 40px -16px rgba(12,20,36,.18);
+}
+.toc a{
+  display:inline-block;padding:8px 14px;border-radius:50px;
+  font-size:12.5px;font-weight:600;color:var(--ink);
+  text-decoration:none;transition:all .2s;
+  border:1px solid transparent;
+}
+.toc a:hover{background:var(--cyan-soft);color:var(--cyan-dark);border-color:rgba(0,158,226,.25)}
+.toc a span{color:var(--cyan);font-weight:700;margin-right:6px}
+
+/* ============ SECTIONS ============ */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+section .num{
+  display:inline-block;background:var(--cyan);color:#fff;
+  padding:5px 12px;border-radius:50px;font-size:11px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;
+}
+section h2{margin-bottom:8px}
+section .desc{font-size:15.5px;color:var(--muted);max-width:68ch;margin-bottom:32px}
+section h2 + .desc{margin-top:6px}
+
+/* ============ KPI CARDS ============ */
+.kpis{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px;
+}
+.kpi-card{
+  background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;
+}
+.kpi-card.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.kpi-card.dark h4{color:rgba(255,255,255,.65)}
+.kpi-card.dark .val{color:#fff}
+.kpi-card.dark .delta{color:var(--cyan)}
+.kpi-card h4{
+  font-size:11.5px;text-transform:uppercase;letter-spacing:1.2px;
+  color:var(--muted);font-weight:600;margin-bottom:8px;
+}
+.kpi-card .val{
+  font-size:26px;font-weight:800;letter-spacing:-.025em;color:var(--ink);
+  font-feature-settings:"tnum";line-height:1.1;
+}
+.kpi-card .val small{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0}
+.kpi-card .delta{
+  font-size:12px;color:var(--green);font-weight:600;margin-top:6px;
+}
+@media (max-width:900px){.kpis{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.kpis{grid-template-columns:1fr}}
+
+/* ============ TABLES ============ */
+.tw{
+  overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:18px;background:#fff;
+}
+table{
+  width:100%;border-collapse:collapse;font-size:13.5px;
+}
+thead th{
+  background:var(--bg-alt);text-align:left;
+  padding:13px 16px;font-weight:700;color:var(--ink);
+  font-size:11.5px;text-transform:uppercase;letter-spacing:1px;
+  border-bottom:1px solid var(--line);white-space:nowrap;
+}
+tbody td{
+  padding:13px 16px;border-bottom:1px solid var(--line);
+  color:var(--ink);vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(0,158,226,.03)}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:12.5px}
+td.kw{font-weight:600;color:var(--ink)}
+td .pill{
+  display:inline-block;padding:2px 10px;border-radius:50px;font-size:10.5px;
+  font-weight:600;letter-spacing:.4px;text-transform:uppercase;
+}
+.pill.es{background:#FEF3C7;color:#92400E}
+.pill.en{background:#DBEAFE;color:#1E40AF}
+.pill.pt{background:#DCFCE7;color:#166534}
+.pill.high{background:#FEE2E2;color:#991B1B}
+.pill.med{background:#FEF3C7;color:#92400E}
+.pill.low{background:#DCFCE7;color:#166534}
+.pill.trans{background:#DBEAFE;color:#1E40AF}
+.pill.info{background:#F1F5F9;color:#475569}
+
+/* ============ SCENARIOS ============ */
+.scen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.scen{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:28px 26px;display:flex;flex-direction:column;
+  transition:all .25s;position:relative;
+}
+.scen:hover{transform:translateY(-4px);box-shadow:0 16px 36px -16px rgba(12,20,36,.18)}
+.scen.rec{background:var(--navy);color:#fff;border-color:var(--navy)}
+.scen.rec h3,.scen.rec .price{color:#fff}
+.scen.rec p,.scen.rec .scen-row span{color:rgba(255,255,255,.7)}
+.scen.rec .badge-rec{
+  position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  background:var(--cyan);color:#fff;padding:5px 14px;border-radius:50px;
+  font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+}
+.scen h3{margin-bottom:4px;font-size:18px}
+.scen .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:14px}
+.scen.rec .label{color:rgba(255,255,255,.5)}
+.scen .price{
+  font-size:32px;font-weight:800;letter-spacing:-.03em;color:var(--ink);
+  font-feature-settings:"tnum";line-height:1.1;
+}
+.scen .price small{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0;display:block;margin-top:4px}
+.scen.rec .price small{color:rgba(255,255,255,.55)}
+.scen-rows{display:flex;flex-direction:column;gap:0;margin-top:22px}
+.scen-row{
+  display:flex;justify-content:space-between;padding:10px 0;
+  border-bottom:1px dashed rgba(0,0,0,.08);font-size:13.5px;
+}
+.scen.rec .scen-row{border-bottom-color:rgba(255,255,255,.1)}
+.scen-row:last-child{border-bottom:none}
+.scen-row span{color:var(--muted);font-weight:500}
+.scen-row b{color:var(--ink);font-weight:700;font-family:var(--mono);font-size:13px}
+.scen.rec .scen-row b{color:#fff}
+@media (max-width:980px){.scen-grid{grid-template-columns:1fr}}
+
+/* ============ CAMPAIGN STRUCTURE ============ */
+.camp-tree{
+  background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;font-family:var(--mono);font-size:13px;line-height:1.7;
+}
+.camp-tree .lvl-0{color:var(--ink);font-weight:700}
+.camp-tree .lvl-1{color:var(--cyan-dark);font-weight:600;padding-left:24px}
+.camp-tree .lvl-2{color:var(--muted);padding-left:48px}
+.camp-tree .note{color:var(--muted);font-style:italic;font-size:11.5px}
+
+/* ============ AUDIENCES ============ */
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.aud{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px;
+}
+.aud h4{font-size:14px;margin-bottom:8px;color:var(--cyan-dark);text-transform:uppercase;letter-spacing:1px;font-weight:700}
+.aud ul{list-style:none;padding:0}
+.aud li{
+  padding:6px 0 6px 18px;font-size:13.5px;color:var(--ink);position:relative;
+  border-bottom:1px dashed rgba(0,0,0,.06);
+}
+.aud li:last-child{border-bottom:none}
+.aud li::before{content:"›";position:absolute;left:0;top:6px;color:var(--cyan);font-weight:700}
+@media (max-width:880px){.aud-grid{grid-template-columns:1fr}}
+
+/* ============ CALENDAR HEATMAP ============ */
+.calendar{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:6px;
+}
+.cal-cell{
+  background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;
+  padding:12px 8px;text-align:center;font-size:11px;
+}
+.cal-cell .m{font-weight:700;color:var(--ink);letter-spacing:.5px;text-transform:uppercase;font-size:11px}
+.cal-cell .b{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px;font-weight:600}
+.cal-cell.low{background:#F1F5F9}
+.cal-cell.mid{background:#FEF3C7;border-color:#FCD34D}
+.cal-cell.high{background:#A5F3DC;border-color:#34D399}
+.cal-cell.peak{background:var(--cyan);border-color:var(--cyan);color:#fff}
+.cal-cell.peak .m,.cal-cell.peak .b{color:#fff}
+.cal-legend{display:flex;gap:18px;margin-top:14px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.cal-legend span{display:inline-flex;align-items:center;gap:8px}
+.cal-legend span::before{content:"";width:14px;height:14px;border-radius:4px}
+.cal-legend .lg-low::before{background:#F1F5F9;border:1px solid var(--line)}
+.cal-legend .lg-mid::before{background:#FEF3C7;border:1px solid #FCD34D}
+.cal-legend .lg-high::before{background:#A5F3DC;border:1px solid #34D399}
+.cal-legend .lg-peak::before{background:var(--cyan)}
+@media (max-width:980px){.calendar{grid-template-columns:repeat(6,1fr)}}
+@media (max-width:540px){.calendar{grid-template-columns:repeat(4,1fr)}}
+
+/* ============ KPIs ============ */
+.kpi-list{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:start}
+.kpi-list .col h3{margin-bottom:14px}
+.metric-table tr td:first-child{font-weight:600}
+
+/* ============ DISCLAIMERS ============ */
+.disc{
+  background:#FFF8EC;border:1px solid #F5D580;border-left:4px solid #E9B949;
+  padding:18px 22px;border-radius:10px;font-size:13.5px;color:#7B5C00;line-height:1.6;
+}
+.disc strong{color:#5A4400}
+.disc ul{margin-top:8px;padding-left:20px}
+.disc li{padding:4px 0}
+
+/* ============ FOOTER ============ */
+.doc-footer{
+  background:var(--navy);color:rgba(255,255,255,.6);
+  padding:36px 0;font-size:13px;text-align:center;
+}
+.doc-footer .brand{font-size:18px;color:#fff;display:block;margin-bottom:8px}
+.doc-footer a{color:var(--cyan)}
+
+/* ============ MISC ============ */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:start}
+@media (max-width:980px){.split,.kpi-list{grid-template-columns:1fr}}
+.note-inline{
+  font-size:12px;color:var(--muted);font-style:italic;margin-top:8px;
+}
+hr.spacer{border:none;height:24px}
+</style>
+</head>
+<body>
+
+<!-- ============ HEAD ============ -->
+<header class="doc-head">
+  <div class="container">
+    <div class="doc-meta">
+      <span class="brand">coonduce<span class="dot">.</span></span>
+      <span>Estimación · Google Ads 2026 · Snow Tours Santiago</span>
+    </div>
+    <span class="doc-tag">Plan de inversión publicitaria · v1.0</span>
+    <h1>Captar turistas de nieve <em>desde búsqueda.</em></h1>
+    <p class="lead">Plan estructurado de Google Ads para la landing <span class="mono">/landing-nieve.html</span>. Cubre keyword research multilingüe (ESP · ENG · POR), 3 escenarios de inversión con proyección de reservas, estructura operativa de campañas y KPIs de seguimiento. Pensado para temporada nieve junio–septiembre 2026.</p>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<div class="container">
+  <nav class="toc">
+    <a href="#resumen"><span>01</span>Resumen ejecutivo</a>
+    <a href="#keywords"><span>02</span>Keyword research</a>
+    <a href="#escenarios"><span>03</span>3 escenarios</a>
+    <a href="#campanas"><span>04</span>Estructura campañas</a>
+    <a href="#audiencias"><span>05</span>Audiencias</a>
+    <a href="#calendario"><span>06</span>Seasonality</a>
+    <a href="#kpis"><span>07</span>KPIs</a>
+    <a href="#disclaimers"><span>08</span>Disclaimers</a>
+  </nav>
+</div>
+
+<!-- ============ 01 · RESUMEN ============ -->
+<section id="resumen">
+  <div class="container">
+    <span class="num">01 · Resumen ejecutivo</span>
+    <h2>Mercado, geo-targeting <em>y proyección headline</em>.</h2>
+    <p class="desc">El público es híbrido: turistas extranjeros buscando "snow day trip Santiago" y chilenos buscando logística para ir a la nieve un fin de semana. La nieve real opera 4 meses al año, por lo que el plan se modela en peak-vs-off-season.</p>
+
+    <div class="kpis">
+      <div class="kpi-card">
+        <h4>Mercado objetivo</h4>
+        <div class="val">~840 K <small>búsquedas/año</small></div>
+        <div class="delta">CL + BR + AR + US + PE + MX</div>
+      </div>
+      <div class="kpi-card">
+        <h4>Geo-targeting</h4>
+        <div class="val">7 países</div>
+        <div class="delta">CL prioridad · BR mayor volumen</div>
+      </div>
+      <div class="kpi-card dark">
+        <h4>Inversión recomendada</h4>
+        <div class="val">USD $14.4 K <small>/ año</small></div>
+        <div class="delta">Escenario moderado · peak-weighted</div>
+      </div>
+      <div class="kpi-card dark">
+        <h4>Reservas proyectadas</h4>
+        <div class="val">~220 <small>/ temporada</small></div>
+        <div class="delta">ROAS estimado 3.8x</div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div>
+        <h3>Hipótesis comercial</h3>
+        <p style="margin-top:8px">El ticket promedio de Coonduce en tour nieve es CLP $180–260K (USD $190–275). Con landing optimizada, esperamos conversion rate de 4–8% sobre clicks calificados. El CAC objetivo es &lt;USD $50 para mantener margen sano post-costos operativos del tour.</p>
+      </div>
+      <div>
+        <h3>Mix de canales recomendado</h3>
+        <p style="margin-top:8px">70% Search (alta intención · keywords transaccionales) · 20% Performance Max (descubrimiento + remarketing automático) · 10% YouTube In-Feed (visual de cordillera + nieve, awareness de marca para audiencias custom-intent).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · KEYWORDS ============ -->
+<section id="keywords" style="background:var(--bg-alt)">
+  <div class="container">
+    <span class="num">02 · Keyword research</span>
+    <h2>Volumen, CPC, intención <em>por idioma</em>.</h2>
+    <p class="desc">Datos consolidados de Google Keyword Planner + estimaciones de mercado peak season. CPC en CLP referencial para subasta junio–septiembre. Marcamos intención (transaccional vs. informacional) — priorizamos transaccionales en Search y reservamos informacionales para contenido + remarketing.</p>
+
+    <div class="tw">
+      <table>
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Idioma</th>
+            <th class="num">Vol. mensual</th>
+            <th class="num">CPC CLP</th>
+            <th>Competencia</th>
+            <th>Intención</th>
+            <th>Prioridad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="kw">tour valle nevado desde santiago</td><td><span class="pill es">ES</span></td><td class="num">2.900</td><td class="num">$420–680</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">transfer farellones</td><td><span class="pill es">ES</span></td><td class="num">880</td><td class="num">$310–520</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">como llegar a valle nevado</td><td><span class="pill es">ES</span></td><td class="num">3.600</td><td class="num">$180–340</td><td><span class="pill med">Media</span></td><td><span class="pill info">Informacional</span></td><td><b>P1</b></td></tr>
+          <tr><td class="kw">tour nieve santiago</td><td><span class="pill es">ES</span></td><td class="num">1.300</td><td class="num">$380–620</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">van valle nevado</td><td><span class="pill es">ES</span></td><td class="num">320</td><td class="num">$280–460</td><td><span class="pill low">Baja</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">excursion la parva</td><td><span class="pill es">ES</span></td><td class="num">210</td><td class="num">$320–480</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P1</b></td></tr>
+          <tr><td class="kw">transporte a el colorado</td><td><span class="pill es">ES</span></td><td class="num">170</td><td class="num">$260–420</td><td><span class="pill low">Baja</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P1</b></td></tr>
+          <tr><td class="kw">valle nevado day trip from santiago</td><td><span class="pill en">EN</span></td><td class="num">1.600</td><td class="num">$520–890</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">ski andes santiago</td><td><span class="pill en">EN</span></td><td class="num">2.400</td><td class="num">$440–720</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">farellones tour santiago</td><td><span class="pill en">EN</span></td><td class="num">720</td><td class="num">$380–620</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">snow tour santiago chile</td><td><span class="pill en">EN</span></td><td class="num">990</td><td class="num">$420–680</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">ski day chile</td><td><span class="pill en">EN</span></td><td class="num">540</td><td class="num">$360–580</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P1</b></td></tr>
+          <tr><td class="kw">tour neve santiago</td><td><span class="pill pt">PT</span></td><td class="num">4.800</td><td class="num">$340–580</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">passeio valle nevado</td><td><span class="pill pt">PT</span></td><td class="num">3.200</td><td class="num">$380–620</td><td><span class="pill high">Alta</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">como ir valle nevado de santiago</td><td><span class="pill pt">PT</span></td><td class="num">2.700</td><td class="num">$180–320</td><td><span class="pill med">Media</span></td><td><span class="pill info">Informacional</span></td><td><b>P1</b></td></tr>
+          <tr><td class="kw">neve chile inverno</td><td><span class="pill pt">PT</span></td><td class="num">8.100</td><td class="num">$220–380</td><td><span class="pill med">Media</span></td><td><span class="pill info">Informacional</span></td><td><b>P2</b></td></tr>
+          <tr><td class="kw">transfer santiago farellones</td><td><span class="pill pt">PT</span></td><td class="num">590</td><td class="num">$320–520</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P0</b></td></tr>
+          <tr><td class="kw">santiago neve passeio</td><td><span class="pill pt">PT</span></td><td class="num">1.100</td><td class="num">$300–480</td><td><span class="pill med">Media</span></td><td><span class="pill trans">Transaccional</span></td><td><b>P1</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note-inline"><strong>Lectura:</strong> el mercado en portugués (BR) es 2.8× más grande en volumen total que ENG y 1.6× más grande que ESP, pero con menor poder adquisitivo por click. La estrategia es <strong>maximizar share of search</strong> en PT (volumen) y <strong>maximizar ticket promedio</strong> en EN (USD audience). ESP cubre tanto turistas hispanos como chilenos locales.</p>
+  </div>
+</section>
+
+<!-- ============ 03 · ESCENARIOS ============ -->
+<section id="escenarios">
+  <div class="container">
+    <span class="num">03 · 3 escenarios de inversión</span>
+    <h2>Conservador · Moderado · Agresivo <em>(modelo peak-weighted).</em></h2>
+    <p class="desc">Cada escenario asume seasonality: 4 meses peak (Jun–Sep) concentran el 75–80% del presupuesto. Off-season (Oct–May) mantiene marca activa con low-spend + tours culturales (Cajón del Maipo, viñas) como cross-sell.</p>
+
+    <div class="scen-grid">
+      <div class="scen">
+        <h3>Conservador</h3>
+        <div class="label">Validación de canal</div>
+        <div class="price">USD $5.6 K <small>/ año total · USD $1.2 K mes peak</small></div>
+        <div class="scen-rows">
+          <div class="scen-row"><span>Spend peak (Jun–Sep)</span><b>$4.8 K USD</b></div>
+          <div class="scen-row"><span>Spend off-season</span><b>$0.8 K USD</b></div>
+          <div class="scen-row"><span>Clicks esperados</span><b>~3.200</b></div>
+          <div class="scen-row"><span>CR landing</span><b>4%</b></div>
+          <div class="scen-row"><span>Leads</span><b>~128</b></div>
+          <div class="scen-row"><span>Reservas confirmadas</span><b>~64</b></div>
+          <div class="scen-row"><span>Revenue est.</span><b>$13.6 K USD</b></div>
+          <div class="scen-row"><span>ROAS</span><b>2.4×</b></div>
+        </div>
+      </div>
+      <div class="scen rec">
+        <div class="badge-rec">Recomendado</div>
+        <h3>Moderado</h3>
+        <div class="label">Operación sostenible</div>
+        <div class="price">USD $14.4 K <small>/ año total · USD $3 K mes peak</small></div>
+        <div class="scen-rows">
+          <div class="scen-row"><span>Spend peak (Jun–Sep)</span><b>$12 K USD</b></div>
+          <div class="scen-row"><span>Spend off-season</span><b>$2.4 K USD</b></div>
+          <div class="scen-row"><span>Clicks esperados</span><b>~7.800</b></div>
+          <div class="scen-row"><span>CR landing</span><b>5.5%</b></div>
+          <div class="scen-row"><span>Leads</span><b>~430</b></div>
+          <div class="scen-row"><span>Reservas confirmadas</span><b>~220</b></div>
+          <div class="scen-row"><span>Revenue est.</span><b>$46.6 K USD</b></div>
+          <div class="scen-row"><span>ROAS</span><b>3.8×</b></div>
+        </div>
+      </div>
+      <div class="scen">
+        <h3>Agresivo</h3>
+        <div class="label">Dominar peak season</div>
+        <div class="price">USD $28.5 K <small>/ año total · USD $6 K mes peak</small></div>
+        <div class="scen-rows">
+          <div class="scen-row"><span>Spend peak (Jun–Sep)</span><b>$24 K USD</b></div>
+          <div class="scen-row"><span>Spend off-season</span><b>$4.5 K USD</b></div>
+          <div class="scen-row"><span>Clicks esperados</span><b>~15.400</b></div>
+          <div class="scen-row"><span>CR landing</span><b>6.5%</b></div>
+          <div class="scen-row"><span>Leads</span><b>~1.000</b></div>
+          <div class="scen-row"><span>Reservas confirmadas</span><b>~510</b></div>
+          <div class="scen-row"><span>Revenue est.</span><b>$108 K USD</b></div>
+          <div class="scen-row"><span>ROAS</span><b>3.8×</b></div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="spacer"/>
+    <h3 style="margin-top:18px">Lectura comparada</h3>
+    <p style="margin-top:8px;max-width:72ch">El <strong>escenario conservador</strong> sirve para validar canal en una primera temporada — el ROAS 2.4× cubre operación y deja datos para refinar. El <strong>moderado</strong> es el sweet spot: presencia constante en peak con margen de aprendizaje, ROAS sano y CAC ~USD $44. El <strong>agresivo</strong> tiene sentido si el equipo operativo (vans, conductores) puede sostener 510 tours en 4 meses (~30 tours/semana en peak). Si no, sobre-prometemos y degradamos NPS.</p>
+  </div>
+</section>
+
+<!-- ============ 04 · CAMPAÑAS ============ -->
+<section id="campanas" style="background:var(--bg-alt)">
+  <div class="container">
+    <span class="num">04 · Estructura de campañas</span>
+    <h2>3 campañas por idioma <em>+ Performance Max overlay</em>.</h2>
+    <p class="desc">Estructura simple, escalable y fácil de leer en reportería semanal. Cada idioma corre como campaña Search independiente con ad groups por destino. Una sola Performance Max captura demanda incremental con feed de imágenes y videos.</p>
+
+    <div class="camp-tree">
+      <div class="lvl-0">CUENTA · Coonduce Snow Tours</div>
+      <div class="lvl-1">├── 1. SEARCH · Spanish (CL · AR · PE · MX · ES)</div>
+      <div class="lvl-2">│   ├── AG · Valle Nevado <span class="note">(KW: tour valle nevado, transfer valle nevado, van valle nevado)</span></div>
+      <div class="lvl-2">│   ├── AG · Farellones <span class="note">(KW: transfer farellones, excursion farellones)</span></div>
+      <div class="lvl-2">│   ├── AG · La Parva <span class="note">(KW: tour la parva, transporte la parva)</span></div>
+      <div class="lvl-2">│   ├── AG · El Colorado <span class="note">(KW: transporte el colorado, tour el colorado)</span></div>
+      <div class="lvl-2">│   └── AG · Multi-destino <span class="note">(KW: tour nieve santiago, snow day chile)</span></div>
+      <div class="lvl-1">├── 2. SEARCH · English (US · UK · CA · AU · DE)</div>
+      <div class="lvl-2">│   ├── AG · Valle Nevado <span class="note">(KW: valle nevado day trip, ski valle nevado)</span></div>
+      <div class="lvl-2">│   ├── AG · Andes/Generic <span class="note">(KW: ski andes santiago, snow tour chile)</span></div>
+      <div class="lvl-2">│   └── AG · Multi-destino <span class="note">(KW: santiago snow day, ski day chile)</span></div>
+      <div class="lvl-1">├── 3. SEARCH · Portuguese (BR)</div>
+      <div class="lvl-2">│   ├── AG · Valle Nevado <span class="note">(KW: passeio valle nevado, tour valle nevado de santiago)</span></div>
+      <div class="lvl-2">│   ├── AG · Farellones <span class="note">(KW: passeio farellones, transfer farellones)</span></div>
+      <div class="lvl-2">│   └── AG · Generic Neve <span class="note">(KW: tour neve santiago, santiago neve passeio)</span></div>
+      <div class="lvl-1">├── 4. PERFORMANCE MAX · All languages</div>
+      <div class="lvl-2">│   ├── Asset group · Snow scenes <span class="note">(video drone + foto van + testimonios)</span></div>
+      <div class="lvl-2">│   └── Audience signals · Custom-intent + remarketing</div>
+      <div class="lvl-1">└── 5. YOUTUBE · Awareness peak (opcional · escenario agresivo)</div>
+      <div class="lvl-2">    ├── Skippable in-feed · 15s + 30s</div>
+      <div class="lvl-2">    └── Targeting · in-market travel + remarketing</div>
+    </div>
+
+    <hr class="spacer"/>
+    <h3>Extensiones de anuncio (críticas)</h3>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Uso</th><th>Ejemplo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="kw">Sitelinks</td><td>4 fijos por campaña</td><td>Tarifas · Destinos · FAQ · Reservar</td></tr>
+          <tr><td class="kw">Call extension</td><td>Solo CL + peak season</td><td>+56 9 0000 0000 · Lun–Dom 7:00–22:00</td></tr>
+          <tr><td class="kw">Location</td><td>Vinculado a Google Business Profile</td><td>Oficina Las Condes, Santiago</td></tr>
+          <tr><td class="kw">Callouts</td><td>Diferenciadores</td><td>"Conductor bilingüe" · "Cadenas incluidas" · "Cancela hasta 24h"</td></tr>
+          <tr><td class="kw">Structured snippets</td><td>Destinos como categorías</td><td>Destinos: Valle Nevado, Farellones, La Parva, El Colorado</td></tr>
+          <tr><td class="kw">Price extension</td><td>Tarifas indicativas</td><td>Round-trip desde CLP $180.000</td></tr>
+          <tr><td class="kw">Promotion</td><td>Solo off-season + early bird</td><td>"15% off reservas con 30 días de anticipación"</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · AUDIENCIAS ============ -->
+<section id="audiencias">
+  <div class="container">
+    <span class="num">05 · Audiencias</span>
+    <h2>In-market + custom-intent <em>+ remarketing pools</em>.</h2>
+    <p class="desc">Las audiencias se aplican como <strong>observation</strong> en Search (para reportería + bid modifiers, no exclusión) y como <strong>signals</strong> en Performance Max (para guiar el algoritmo).</p>
+
+    <div class="aud-grid">
+      <div class="aud">
+        <h4>In-Market (Google)</h4>
+        <ul>
+          <li>Travel · Adventure Tourism</li>
+          <li>Travel · Vacations by Destination · South America</li>
+          <li>Sports & Fitness · Skiing &amp; Snowboarding</li>
+          <li>Travel · Hotels &amp; Accommodations · Chile</li>
+          <li>Sporting Goods · Ski Equipment</li>
+          <li>Travel · Air Travel · Flights to Chile</li>
+        </ul>
+      </div>
+      <div class="aud">
+        <h4>Custom-Intent (build)</h4>
+        <ul>
+          <li>KW competidores: <span class="mono">cumbres andinas, snow travel chile, ski andes adventure</span></li>
+          <li>KW destinos peak: <span class="mono">valle nevado, farellones, la parva, el colorado, lift ticket chile</span></li>
+          <li>Sitios visitados: <span class="mono">vallenevado.com, skichile.com, skitotal.com, getyourguide.com (ski Chile)</span></li>
+          <li>Sitios competencia: <span class="mono">tripadvisor.com tours-chile, klook.com chile-ski, viator.com santiago-ski</span></li>
+        </ul>
+      </div>
+      <div class="aud">
+        <h4>Remarketing Pools</h4>
+        <ul>
+          <li>Landing visitors · 30 días</li>
+          <li>Landing visitors · 60 días (cross-sell wine/Atacama)</li>
+          <li>Form starters sin enviar · 7 días (urgencia + WhatsApp)</li>
+          <li>Reservas confirmadas pasadas · win-back temporada siguiente</li>
+          <li>Video viewers YT · 25% / 50% / 75% / 100%</li>
+          <li>Lookalike a customers existentes (Customer Match upload)</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="spacer"/>
+    <h3>Geo-targeting fino</h3>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr>
+            <th>Mercado</th><th>Ciudades / regiones</th><th>Idioma campaña</th><th class="num">% Budget peak</th><th>Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="kw">Chile</td><td>Santiago RM + radio 50 km</td><td>ESP</td><td class="num">30%</td><td>Locales fin de semana + visitantes en hotel</td></tr>
+          <tr><td class="kw">Brasil</td><td>São Paulo, Rio, Curitiba, BH, Porto Alegre</td><td>PT</td><td class="num">28%</td><td>Mayor volumen · ticket medio bajo</td></tr>
+          <tr><td class="kw">Argentina</td><td>Buenos Aires, Mendoza, Córdoba</td><td>ESP</td><td class="num">8%</td><td>Frontera + cross-border ski tourism</td></tr>
+          <tr><td class="kw">EEUU</td><td>NY, LA, Miami, SF, Houston</td><td>EN</td><td class="num">18%</td><td>Ticket más alto · USD audience</td></tr>
+          <tr><td class="kw">México</td><td>CDMX, Monterrey, Guadalajara</td><td>ESP</td><td class="num">6%</td><td>Verano boreal viajan a CL</td></tr>
+          <tr><td class="kw">Colombia</td><td>Bogotá, Medellín</td><td>ESP</td><td class="num">4%</td><td>Mercado en crecimiento</td></tr>
+          <tr><td class="kw">Perú</td><td>Lima</td><td>ESP</td><td class="num">3%</td><td>Vuelo corto · turismo regional</td></tr>
+          <tr><td class="kw">UK + DE + CA + AU</td><td>Capitales + tier-1</td><td>EN</td><td class="num">3%</td><td>Long-tail audience </td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · CALENDARIO ============ -->
+<section id="calendario" style="background:var(--bg-alt)">
+  <div class="container">
+    <span class="num">06 · Calendario / seasonality</span>
+    <h2>4 meses peak <em>concentran 80% del spend.</em></h2>
+    <p class="desc">Distribución mensual del presupuesto anual escenario moderado (USD $14.4 K total). Off-season mantenemos marca con low-spend + cross-sell de tours culturales (Cajón del Maipo, viñas Casablanca, Valparaíso day trip).</p>
+
+    <div class="calendar">
+      <div class="cal-cell low"><div class="m">Ene</div><div class="b">$200</div></div>
+      <div class="cal-cell low"><div class="m">Feb</div><div class="b">$200</div></div>
+      <div class="cal-cell low"><div class="m">Mar</div><div class="b">$200</div></div>
+      <div class="cal-cell low"><div class="m">Abr</div><div class="b">$200</div></div>
+      <div class="cal-cell mid"><div class="m">May</div><div class="b">$600</div></div>
+      <div class="cal-cell high"><div class="m">Jun</div><div class="b">$2.4 K</div></div>
+      <div class="cal-cell peak"><div class="m">Jul</div><div class="b">$3.2 K</div></div>
+      <div class="cal-cell peak"><div class="m">Ago</div><div class="b">$3.4 K</div></div>
+      <div class="cal-cell high"><div class="m">Sep</div><div class="b">$3.0 K</div></div>
+      <div class="cal-cell mid"><div class="m">Oct</div><div class="b">$400</div></div>
+      <div class="cal-cell low"><div class="m">Nov</div><div class="b">$200</div></div>
+      <div class="cal-cell low"><div class="m">Dic</div><div class="b">$400</div></div>
+    </div>
+    <div class="cal-legend">
+      <span class="lg-low">Off-season · marca + cross-sell</span>
+      <span class="lg-mid">Ramp-up / cooldown</span>
+      <span class="lg-high">Peak season activo</span>
+      <span class="lg-peak">Peak máximo</span>
+    </div>
+
+    <hr class="spacer"/>
+    <h3>Lectura del calendario</h3>
+    <p style="margin-top:8px;max-width:72ch">May es ramp-up: arrancamos con keywords informacionales en PT ("neve chile inverno") para capturar lectores tempranos. Jun–Sep es operación full con todas las campañas activas. Oct ramp-down enfoca en remarketing + win-back. Nov–Abr mantenemos solo brand + low-budget tours culturales para no perder pixel data ni Quality Score.</p>
+  </div>
+</section>
+
+<!-- ============ 07 · KPIs ============ -->
+<section id="kpis">
+  <div class="container">
+    <span class="num">07 · KPIs</span>
+    <h2>North Star <em>+ métricas secundarias</em>.</h2>
+    <p class="desc">Reportería semanal en peak season, mensual en off-season. Todas las métricas se compartirán en dashboard Looker Studio conectado a Google Ads + GA4 + Hapee (CRM) para cerrar el loop reserva → revenue.</p>
+
+    <div class="kpi-list">
+      <div class="col">
+        <h3>Métricas clave</h3>
+        <div class="tw">
+          <table class="metric-table">
+            <thead>
+              <tr><th>Métrica</th><th>Tipo</th><th>Target moderado</th><th>Alarma</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Reservas confirmadas / mes peak</td><td>North Star</td><td class="num">~55</td><td>&lt;30</td></tr>
+              <tr><td>Costo por lead (CPL)</td><td>Eficiencia</td><td class="num">USD $20–28</td><td>&gt;USD $40</td></tr>
+              <tr><td>Costo por reserva (CAC)</td><td>Eficiencia</td><td class="num">USD $44</td><td>&gt;USD $70</td></tr>
+              <tr><td>Conversion rate landing</td><td>Landing</td><td class="num">5–6%</td><td>&lt;3%</td></tr>
+              <tr><td>Lead → reserva (cierre)</td><td>Comercial</td><td class="num">50%</td><td>&lt;30%</td></tr>
+              <tr><td>ROAS (revenue / spend)</td><td>Negocio</td><td class="num">3.5–4.0×</td><td>&lt;2.5×</td></tr>
+              <tr><td>CTR Search promedio</td><td>Anuncio</td><td class="num">6–9%</td><td>&lt;4%</td></tr>
+              <tr><td>Quality Score promedio</td><td>Anuncio</td><td class="num">7+/10</td><td>&lt;5</td></tr>
+              <tr><td>Search Impression Share</td><td>Visibilidad</td><td class="num">&gt;45%</td><td>&lt;25%</td></tr>
+              <tr><td>SIS · perdido por presupuesto</td><td>Visibilidad</td><td class="num">&lt;20%</td><td>&gt;40%</td></tr>
+              <tr><td>SIS · perdido por ranking</td><td>Visibilidad</td><td class="num">&lt;25%</td><td>&gt;40%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Cadencia de seguimiento</h3>
+        <p style="margin-top:8px;font-size:14px">
+          <strong>Diaria (peak):</strong> spend, conversiones, CPL — alerta automática Slack si CPL &gt;USD $40.<br/><br/>
+          <strong>Semanal (peak):</strong> reporte CR landing, top 10 keywords por reserva, mejores/peores anuncios.<br/><br/>
+          <strong>Quincenal (peak):</strong> negative keywords sweep, ajustes de bid por audiencia, A/B test de creatividad.<br/><br/>
+          <strong>Mensual:</strong> revisión completa con cliente, recomendaciones de ajuste estructural.<br/><br/>
+          <strong>Post-temporada:</strong> debrief + learnings + plan año siguiente con benchmarks reales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · DISCLAIMERS ============ -->
+<section id="disclaimers" style="background:var(--bg-alt)">
+  <div class="container">
+    <span class="num">08 · Disclaimers</span>
+    <h2>Lo que el modelo asume <em>(y lo que no controlamos)</em>.</h2>
+    <p class="desc">Estimaciones basadas en datos de Google Keyword Planner, benchmarks de la industria turismo Chile y proyecciones del equipo Digitals. Variables fuera de control de marketing señaladas explícitamente.</p>
+
+    <div class="disc">
+      <strong>Variables que pueden mover el modelo ±20%:</strong>
+      <ul>
+        <li><strong>CPC real</strong> depende del Quality Score que alcancemos en los primeros 30 días — landing relevante, ads bien escritos y CTR alto bajan el CPC ~30% vs. estimación inicial. Si el Quality Score se queda en 4-5, el CPC sube proporcionalmente.</li>
+        <li><strong>Tasas de conversión</strong> 4–8% asumidas con la landing optimizada (la que se entregó). Si el iframe del formulario falla, si WhatsApp tarda en responder o si la página carga lento, la CR puede caer a 2–3%.</li>
+        <li><strong>Brasil tiene mayor volumen</strong> de búsqueda pero menor ticket promedio (USD $/persona). Ajustar expectativa de CAC vs. revenue por mercado — los números headline son un blend ponderado.</li>
+        <li><strong>EEUU tiene menor volumen</strong> pero ticket más alto (USD audience + propensión a privado). El CAC absoluto es mayor pero el ROAS por reserva es mejor.</li>
+        <li><strong>Nieve real</strong>: si la temporada es seca (poca nieve hasta julio), la demanda cae 20–30%. Plan B: re-orientar parcial del spend a tours culturales (Maipo, viñas) sin perder pixel.</li>
+        <li><strong>Tipo de cambio CLP/USD</strong>: las tarifas en USD se calculan a CLP 950 = USD 1. Devaluación fuerte del peso puede afectar márgenes en el corto plazo.</li>
+        <li><strong>Operación del cliente</strong>: si no hay vans / conductores disponibles los días punta (sábados), perdemos reservas confirmadas. Capacidad operativa es un cap real para el escenario agresivo.</li>
+      </ul>
+    </div>
+
+    <hr class="spacer"/>
+    <p style="font-size:13px;color:var(--muted);max-width:72ch">
+      <strong>Metodología:</strong> CPC y volumen estimados con Google Keyword Planner (acceso Digitals) y validados contra Semrush + Ahrefs para mercados extranjeros. Tasas de conversión basadas en benchmarks 2024–2025 de landings de tour day-trip en LATAM (rango 3.5–7%). El ticket promedio CLP $180–260K se valida contra tarifas públicas de Cumbres Andinas, Snow Travel y Ski Total para misma operación Santiago → Valle Nevado privado.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="doc-footer">
+  <div class="container">
+    <span class="brand">coonduce<span style="color:var(--cyan)">.</span></span>
+    <span>Estimación Google Ads 2026 · Preparado por Digitals · v1.0</span><br/>
+    <span>Preguntas: <a href="mailto:sebastian@digitals.cl">sebastian@digitals.cl</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
